@@ -15,11 +15,13 @@ use std::env;
 struct CreateUser {
     username: Option<String>,
     password: Option<String>,
+    Email: Option<String>,
 }
 
 #[derive(Serialize)]
 struct ErrorResponse {
     error: String,
+    id: i32,
 }
 
 #[derive(Serialize)]
